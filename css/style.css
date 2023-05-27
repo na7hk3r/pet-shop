@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*****      Header      *****/
+
+.header-container-top{
+    background-color: #222222;
+    color: #F3F3F3;
+    display: flex;
+    font-weight: 400;
+    justify-content: space-between;
+    padding-top: 1em;
+    padding-left: 2em;
+}
+
+.header-list{
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5em;
+    list-style: none;
+    padding: 5px;
+}
+
+.header-container-nav{
+    background-color: #F0A83E;
+}
+
+.logo{
+    width: 200px;
+}
+
+.nav-links{
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+    .nav-links > ul {
+        display: flex;
+        font-size: 13px;
+        font-weight: 400;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+
+/*****      Main Sections      *****/
+
+#Banner {
+    background-image: url(../img/bowl-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 409px;
+}
+    #Banner > p, #Banner > h2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+#Productos {
+    text-align: center;
+    color: #3C2313;
+}
+
+.price {
+    color: #F0A83E;
+}
+
+
+/*****      Footer      *****/
+
+footer{
+    background-color: #3C2313;
+    color: #FFFFFF;
+}
+
+    footer p{
+        color: #8A8787;
+    }
+
+.footer-end{
+    background-color: #222222;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: 700;
+    height: 20px;
+    line-height: 11.72px;
+    padding: 2px;
+    text-align: center;
+    width: 100%;
+}

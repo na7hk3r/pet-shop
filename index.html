@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front Cat&Dog</title>
+
+    <!--        Hojas de estilo        -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--        Fuentes, librerías      -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header>
-        <span>Grandes ofertas en comederos</span> 
-        <ul>
-            <li>Español</li>
-            <li>$ARG</li>
-        </ul>
-        <nav>
-            <a href="index.html"><img src="img/logo-inicial.png" alt="Logo"></a>
-            <ul>
-                <li>Categorias</li>
-                <li>Pets</li>
-                <li>Nosotros</li>
-                <li>Contactanos</li>
+        <section class="header-container-top">
+            <span>Grandes ofertas en comederos</span>
+            <ul class="header-list">
+                <li>Español</li>
+                <li>$UYU</li>
             </ul>
-        </nav>
+        </section>
+        <section class="header-container-nav">
+            <nav class="nav-links">
+                <a href="index.html"><img src="img/logo.png" alt="Logo" class="logo"></a>
+                <ul>
+                    <li><img src="img/pawprint.png" alt="Huellita"><span>Categorias</span></li>
+                    <li><img src="img/pawprint.png" alt="Huellita"><span>Pets</span></li>
+                    <li><img src="img/pawprint.png" alt="Huellita"><span>Nosotros</span></li>
+                    <li><img src="img/pawprint.png" alt="Huellita"><span>Contactanos</span></li>
+                </ul>
+            </nav>
+        </section>
     </header>
     <main>
         <section id="Banner">
-            <img src="img/bowl-background.png" alt="Header Bowl" />
-            <p>¡Es un placer tenerte aquí!</p>
+            <h2>¡Es un placer tenerte aquí!</h2>
             <p>¡Comederos en descuento!</p>
             <p>COMEDEROS</p>
         </section>
@@ -34,23 +51,35 @@
         <section id="Productos">
             <img src="img/pawprint.svg" alt="Patita">
             <h1>Productos Destacados</h1>
-            <p>Comederos - Accesorios - Comida</p> 
+            <p>Comederos - Accesorios - Comida</p>
 
             <img src="img/churrasquito.png" alt="Producto Churrasquito">
             <p>Juguete Churrasquito</p>
-            <p>$150</p>
+            <p class="price">$150</p>
             <img src="img/comedero.png" alt="Producto Comedero">
             <p>Comedero para perro</p>
-            <p>$250</p>
+            <p class="price">$250</p>
             <img src="img/huesito.png" alt="Producto Huesito">
             <p>Juguete Huesito</p>
-            <p>$650</p>
-
-
+            <p class="price">$650</p>
         </section>
     </main>
     <footer>
-        <span>Todos los derechos reservados Front End</span>
+        <div class="icons">
+            <i class="fa-regular fa-location-dot"></i>
+            <h2>Localidad</h2>
+            <p>Calle, Departamento</p>
+            <i class="fa-regular fa-phone-volume"></i>
+            <h2>Teléfono</h2>
+            <p>Número de teléfono</p>
+            <i class="fa-regular fa-envelope"></i>
+            <h2>Correo Electrónico</h2>
+            <p>Dirección de correo</p>
+        </div>
+        <div class="footer-end">
+            <span>Todos los derechos reservados Front End</span>
+        </div>
     </footer>
 </body>
+
 </html>
