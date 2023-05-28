@@ -76,6 +76,17 @@
     color: #F0A83E;
 }
 
+.card-container{
+    margin-top: 100px;
+    margin-right: auto;
+    margin-bottom: 100px;
+    margin-left: auto;
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
 
 /*****      Footer      *****/
 
