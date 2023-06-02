@@ -14,10 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://kit.fontawesome.com/cbea915c99.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -33,7 +31,7 @@
             <nav class="nav-links">
                 <a href="index.html"><img src="img/logo.png" alt="Logo" class="logo"></a>
                 <ul>
-                    <li><img src="img/pawprint.png" alt="Huellita"><span>Categorias</span></li>
+                    <li><i class="fa-solid fa-paw"></i><span>Categorias</span></li>
                     <li><img src="img/pawprint.png" alt="Huellita"><span>Pets</span></li>
                     <li><img src="img/pawprint.png" alt="Huellita"><span>Nosotros</span></li>
                     <li><img src="img/pawprint.png" alt="Huellita"><span>Contactanos</span></li>
@@ -43,15 +41,17 @@
     </header>
     <main>
         <section id="Banner">
+        <div class="banner-textos">
             <h2>¡Es un placer tenerte aquí!</h2>
             <p>¡Comederos en descuento!</p>
-            <p>COMEDEROS</p>
+            <button>COMEDEROS</button>
+        </div>
         </section>
 
         <section id="Productos">
             <img src="img/pawprint.svg" alt="Patita">
             <h1>Productos Destacados</h1>
-            <p>Comederos - Accesorios - Comida</p>
+            <p class="cat-productos">Comederos - Accesorios - Comida</p>
 
             <div class="card-container">
                 <div class="card1">
@@ -76,10 +76,10 @@
     </main>
     <footer>
         <div class="icons">
-            <i class="fa-regular fa-location-dot"></i>
+            <i class="fa-solid fa-location-dot"></i>
             <h2>Localidad</h2>
             <p>Calle, Departamento</p>
-            <i class="fa-regular fa-phone-volume"></i>
+            <i class="fa-solid fa-phone"></i>
             <h2>Teléfono</h2>
             <p>Número de teléfono</p>
             <i class="fa-regular fa-envelope"></i>
@@ -87,7 +87,7 @@
             <p>Dirección de correo</p>
         </div>
         <div class="footer-end">
-            <span>Todos los derechos reservados Front End</span>
+            <span>&copy;Todos los derechos reservados Front End</span>
         </div>
     </footer>
 </body>
