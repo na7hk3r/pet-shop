@@ -21,6 +21,8 @@
     justify-content: space-between;
     padding-top: 1em;
     padding-left: 2em;
+    align-items: center;
+    padding: 5px;
 }
 
 .header-list{
@@ -38,6 +40,7 @@
 .logo{
     width: 200px;
     align-items: center;
+    margin-top: 10px;
 }
 
 .nav-links{
