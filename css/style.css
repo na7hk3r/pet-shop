@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 *{
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 
@@ -14,14 +14,14 @@
     display: flex;
 }
 .header-container-top{
+    align-items: center;
     background-color: #222222;
     color: #F3F3F3;
     display: flex;
     font-weight: 400;
     justify-content: space-between;
-    padding-top: 1em;
     padding-left: 2em;
-    align-items: center;
+    padding-top: 1em;
     padding: 5px;
 }
 
@@ -38,9 +38,9 @@
 }
 
 .logo{
-    width: 200px;
     align-items: center;
     margin-top: 10px;
+    width: 200px;
 }
 
 .nav-links{
@@ -56,8 +56,8 @@
         font-weight: 400;
         justify-content: space-between;
         list-style: none;
-        padding: 10px;
         margin-right: 10px;
+        padding: 10px;
     }
     .nav-links > ul > li {
         margin-right: 10px;
@@ -73,23 +73,23 @@
 }
 
 #Banner {
-    padding: 10px;
+    align-items: flex-end;
     background-image: url(../img/bowl-background.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 409px;
-    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
     flex-direction: column;
+    height: 409px;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
 }
 
 .banner-textos{
+    color: #3C2313;
     margin:10px;
     text-align: center;
-    color: #3C2313;
 }
 
 #Banner h2 {
@@ -140,11 +140,12 @@
 }
 
 .card-container{
+    align-items: center;
     display: flex;
     height: auto;
     justify-content: space-evenly;
-    align-items: center;
-    margin: 100px;
+    margin: 10%;
+    flex-wrap:wrap;
     text-align: center;
 }
 
@@ -168,18 +169,23 @@
 /*****      Footer      *****/
 
 footer{
+    align-items: center;
     background-color: #3C2313;
     color: #FFFFFF;
-    height: auto;
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
+    height: auto;
     justify-content: space-between;
-    flex-direction: column;
+}
+
+.logo-footer{
+    margin-right: 10%;
 }
 
 .icons{
     align-items: center;
     margin: 50px;
+    align-items: flex-start;
 }
 
 .icons i{
@@ -192,6 +198,7 @@ footer{
     }
 
 .footer-end{
+    align-items: center;
     background-color: #222222;
     color: #FFFFFF;
     font-size: 14px;
@@ -200,5 +207,4 @@ footer{
     padding: 10px;
     text-align: center;
     width: 100%;
-    align-items: center;
 }
