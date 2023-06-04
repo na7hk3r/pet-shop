@@ -51,7 +51,9 @@
 }
 
     .nav-links > ul {
+        cursor: pointer;
         display: flex;
+        flex-wrap: wrap;
         font-size: 16px;
         font-weight: 400;
         justify-content: space-between;
@@ -174,6 +176,7 @@ footer{
     color: #FFFFFF;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     height: auto;
     justify-content: space-between;
 }
