@@ -191,9 +191,25 @@ footer {
 }
 
 .icons {
-    align-items: center;
+    justify-content: space-between;
     margin: 50px;
     align-items: flex-start;
+    display: flex;
+}
+
+.icons-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto{
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    margin: 10px;
+    height: auto;
+    line-height: 2.5em;
 }
 
 .icons i {
@@ -251,5 +267,10 @@ footer p {
 
     .nav-links>ul {
         display: none;
+    }
+
+    .logo-footer {
+        position: relative;
+        left: 70px;
     }
 }
