@@ -172,6 +172,7 @@
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
+/**     Formulario      **/
 .form form{
     display: flex;
     flex-direction: column;
@@ -185,14 +186,36 @@
 
 input {
     background-color: #3C2313;
-    border-radius: 5px; 
+    border-radius: 10px; 
+    border: none;
     color: #FFF;
-    height: 30px;
+    height: 3em;
     padding: 10px;
     width: 30%;
+    margin: 5px;
 }
 
+input::placeholder{
+    color: #FFF;
+}
 
+.btn-reset,
+.btn-send{
+    border-radius: 10px;
+    border: none;
+    color: white;
+    height: 2em;
+    width: 7%;
+    margin: 5px;
+}
+
+.btn-reset{
+    background-color: #8A8787;
+}
+
+.btn-send{
+    background-color: #F0A83E;
+}
 
 /*****      Footer      *****/
 
