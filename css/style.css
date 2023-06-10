@@ -43,9 +43,10 @@
     width: 200px;
 }
 
-.burger-menu,
-.fa{
+.burger-menu{
     display: none;
+    position: relative;
+    z-index: -10;
 }
 
 .nav-links {
@@ -53,6 +54,7 @@
     display: flex;
     justify-content: space-between;
     padding: 15px;
+    align-items: center;
 }
 
 .nav-links>ul {
@@ -160,10 +162,10 @@
 .card {
     background-color: #FBFAF6;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    flex-wrap: wrap;
     height: auto;
     padding: 2em;
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-    flex-wrap: wrap;
 }
 
 .card:hover {
@@ -224,6 +226,8 @@ footer p {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+        position: relative;
+        z-index: 10;
     }
 
     .burger-menu {
