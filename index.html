@@ -21,11 +21,21 @@
 <body>
     <header>
         <section class="header-container-top">
-            <span>Grandes ofertas en comederos</span>
-            <ul class="header-list">
-                <li>Español</li>
-                <li>$UYU</li>
-            </ul>
+            <div class="span-ofertas">
+                <span>Grandes ofertas en comederos</span>
+            </div>
+            <div class="header-list">
+                <select class="header-list">
+                    <option>Español</option>
+                    <option>Inglés</option>
+                </select>
+                <select class="header-list">
+                    <option>$UYU</option>
+                    <option>U$S</option>
+                    <option>$ARG</option>
+                    <option>$COL</option>
+                </select>
+            </div>
         </section>
         <section class="header-container-nav">
             <i class="fa fa-bars burger-menu"></i>
@@ -50,7 +60,7 @@
         </section>
 
         <section id="Productos">
-            <img src="img/pawprint.svg" alt="Patita">
+            <img src="img/pawprint.svg" alt="Patita" id="patita-productos">
             <h1>Productos Destacados</h1>
             <p class="cat-productos">Comederos - Accesorios - Comida</p>
 
@@ -78,11 +88,11 @@
                     <h2>Contáctanos</h2>
                     <input id="nombre" type="text" name="name" placeholder="Nombre y Apellido" required>
                     <input id="mail" type="mail" name="email" placeholder="Ingresá tu correo eletrónico" required>
-                    <input id="telefono" type="text" name="phone" placeholder="Teléfono" required>
+                    <input id="telefono" type="tel" name="phone" placeholder="Teléfono" required>
                 </form>
                 <div class="btn">
-                    <button id="btn-reset" type="reset">Resetear</button>
-                    <button id="btn-send" type="submit">Enviar</button>
+                    <button class="btn-reset" type="reset">Resetear</button>
+                    <button class="btn-send" type="submit">Enviar</button>
                 </div>
             </div>
         </section>
@@ -92,7 +102,7 @@
                 <h3>Suscríbete para más novedades</h3>
             </div>
             <div class="pre-2">
-                <input type="text" name="" id="search-input" placeholder="Ingresá tu correo electrónico">
+                <input type="text" name="mail-list" id="search-input" placeholder="Ingresá tu correo electrónico">
                 <button type="submit">Suscribirme</button>
             </div>
         </div>
