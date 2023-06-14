@@ -409,9 +409,18 @@ footer p {
         justify-content: center;
         margin: 5px;
     }
-    .pre-2 > input {
-        width: 40%;
+    .pre-1 > h3 {
+        font-size: 1rem;
     }
+
+    .pre-2 > input {
+        width: 60%;
+    }
+
+    .pre-2 > button {
+        width: 30%;
+    }
+
     /*  Footer  */
     footer{
         flex-direction: column-reverse;
