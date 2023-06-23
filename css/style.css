@@ -7,6 +7,30 @@
     padding: 0;
 }
 
+html {
+    background-color: #FFF;
+    scroll-behavior: smooth;
+    scrollbar-color: #F0A83E;
+    scrollbar-width: thin;
+}
+
+html::-webkit-scrollbar {
+    width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+    background: #222222;
+}
+
+
+html::-webkit-scrollbar-thumb {
+    background-color: #F0A83E;
+}
+
+::selection {
+    background-color: #F0A83E;
+    color: #FFF;
+}
 
 /*****      Header      *****/
 
@@ -36,6 +60,10 @@
     font-size: 14px;
     cursor: pointer;
 }
+
+/* select:hover{
+    background-color: #F0A83E;
+} */
 
 .header-container-nav {
     align-items: center;
