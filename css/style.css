@@ -61,10 +61,6 @@ html::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 
-/* select:hover{
-    background-color: #F0A83E;
-} */
-
 .header-container-nav {
     align-items: center;
     background-color: #F0A83E;
@@ -250,6 +246,7 @@ form > input::placeholder{
 .btn {
     flex-direction: row;
     margin: 20px;
+    width: 100%;
 }
 
 .btn-reset,
