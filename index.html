@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Front Cat&Dog</title>
+    <meta name="description" content="Pet Shop - Encuentra los mejores productos para tu mascota">
+    <meta name="keywords" content="pet shop, mascotas, perros, gatos, comederos, juguetes">
+    <title>Front Cat&Dog | Tienda para Mascotas</title>
 
     <!--        Hojas de estilo        -->
     <link rel="stylesheet" href="css/style.css">
@@ -13,26 +15,26 @@
     <!--        Fuentes, librerías      -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/cbea915c99.js" crossorigin="anonymous"></script>
 
     <!--  Favicon -->
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <header>
         <section class="header-container-top">
             <div class="span-ofertas">
-                <span>Grandes ofertas en comederos</span>
+                <span><i class="fas fa-tag"></i> Grandes ofertas en comederos</span>
             </div>
             <div class="header-list">
-                <select class="header-list">
+                <select class="header-list" aria-label="Seleccionar idioma">
                     <option>Español</option>
                     <option>Inglés</option>
                 </select>
-                <select class="header-list">
+                <select class="header-list" aria-label="Seleccionar moneda">
                     <option>$UYU</option>
                     <option>U$S</option>
                     <option>$ARG</option>
@@ -42,23 +44,43 @@
         </section>
     </header>
     <section class="header-container-nav">
-        <i class="fa fa-bars burger-menu"></i>
+        <i class="fa fa-bars burger-menu" aria-label="Menú"></i>
         <nav class="nav-links">
-            <a href="index.html"><img src="img/logo.png" alt="Logo" class="logo"></a>
+            <a href="index.html"><img src="img/logo.png" alt="Logo Cat&Dog" class="logo"></a>
             <ul>
-                <li><i class="fa-solid fa-paw"></i><span>Categorias</span></li>
+                <li><i class="fa-solid fa-paw"></i><span>Categorías</span></li>
                 <li><i class="fa-solid fa-paw"></i><span>Pets</span></li>
                 <li><i class="fa-solid fa-paw"></i><span>Nosotros</span></li>
-                <li><i class="fa-solid fa-paw"></i><span>Contactanos</span></li>
+                <li><i class="fa-solid fa-paw"></i><span>Contáctanos</span></li>
             </ul>
         </nav>
     </section>
+    
+    <!-- Menú móvil -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <img src="img/logo-inverso.png" alt="Logo Cat&Dog" class="logo-mobile">
+            <i class="fas fa-times close-menu" aria-label="Cerrar menú"></i>
+        </div>
+        <ul class="mobile-menu-items">
+            <li><a href="#"><i class="fa-solid fa-tag"></i> Categorías</a></li>
+            <li><a href="#"><i class="fa-solid fa-paw"></i> Pets</a></li>
+            <li><a href="#Nosotros"><i class="fa-solid fa-users"></i> Nosotros</a></li>
+            <li><a href="#Contacto"><i class="fa-solid fa-envelope"></i> Contáctanos</a></li>
+        </ul>
+        <div class="mobile-menu-socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+    
     <main>
         <section id="Banner">
             <div class="banner-textos">
                 <h2>¡Es un placer tenerte aquí!</h2>
                 <p>¡Comederos en descuento!</p>
-                <button>COMEDEROS</button>
+                <button aria-label="Ver comederos" class="btn-banner">COMEDEROS</button>
             </div>
         </section>
 
@@ -66,74 +88,196 @@
             <img src="img/pawprint.svg" alt="Patita" id="patita-productos">
             <h1>Productos Destacados</h1>
             <p class="cat-productos">Comederos - Accesorios - Comida</p>
+            
+            <div class="category-filters">
+                <button class="category-tab active-tab" data-category="todos">Todos</button>
+                <button class="category-tab" data-category="juguetes">Juguetes</button>
+                <button class="category-tab" data-category="comederos">Comederos</button>
+                <button class="category-tab" data-category="accesorios">Accesorios</button>
+            </div>
 
             <div class="card-container">
-                <div class="card">
+                <div class="card" data-category="juguetes">
+                    <div class="card-badge">Oferta</div>
                     <img src="img/churrasquito.png" alt="Producto Churrasquito">
                     <p>Juguete Churrasquito</p>
                     <p class="price">$150</p>
+                    <button class="btn-comprar">Comprar</button>
                 </div>
 
-                <div class="card">
+                <div class="card" data-category="comederos">
                     <img src="img/comedero.png" alt="Producto Comedero">
                     <p>Comedero para perro</p>
                     <p class="price">$250</p>
+                    <button class="btn-comprar">Comprar</button>
                 </div>
 
-                <div class="card">
+                <div class="card" data-category="juguetes">
+                    <div class="card-badge">Nuevo</div>
                     <img src="img/huesito.png" alt="Producto Huesito">
                     <p>Juguete Huesito</p>
                     <p class="price">$650</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                
+                <div class="card" data-category="accesorios">
+                    <img src="img/comedero.png" alt="Collar para gato">
+                    <p>Collar para gato</p>
+                    <p class="price">$180</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                
+                <div class="card" data-category="accesorios">
+                    <div class="card-badge">Oferta</div>
+                    <img src="img/churrasquito.png" alt="Cama para perro">
+                    <p>Cama para perro</p>
+                    <p class="price">$1200</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                
+                <div class="card" data-category="comederos">
+                    <img src="img/huesito.png" alt="Comedero para gato">
+                    <p>Comedero para gato</p>
+                    <p class="price">$320</p>
+                    <button class="btn-comprar">Comprar</button>
                 </div>
             </div>
-            <div class="form" method="POST">
+            
+            <section id="Nosotros" class="about-section">
+                <div class="about-container">
+                    <h2>Sobre Nosotros</h2>
+                    <div class="about-content">
+                        <div class="about-image">
+                            <img src="img/pawprint.svg" alt="Sobre nosotros" class="about-img">
+                        </div>
+                        <div class="about-text">
+                            <p>En <strong>Cat&Dog</strong> somos amantes de las mascotas y entendemos que tu perro o gato es parte de tu familia.</p>
+                            <p>Por eso, nos esforzamos en ofrecerte los mejores productos para el cuidado, alimentación y diversión de tus mejores amigos.</p>
+                            <p>Contamos con más de 10 años de experiencia en el mercado y un equipo especializado que selecciona cuidadosamente cada producto que ofrecemos.</p>
+                            <a href="#" class="btn-general">Conocer más</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="form" id="Contacto">
                 <form>
                     <h2>Contáctanos</h2>
                     <input id="nombre" type="text" name="name" placeholder="Nombre y Apellido" required>
-                    <input id="mail" type="mail" name="email" placeholder="Ingresá tu correo eletrónico" required>
+                    <input id="mail" type="email" name="email" placeholder="Ingresá tu correo electrónico" required>
                     <input id="telefono" type="tel" name="phone" placeholder="Teléfono" required>
+                    <textarea id="mensaje" name="message" placeholder="Escribe tu mensaje" rows="4"></textarea>
                     <div class="btn">
                         <button class="btn-reset" type="reset">Resetear</button>
                         <button class="btn-send" type="submit">Enviar</button>
                     </div>
                 </form>
-            </div>
+            </section>
+            
+            <section class="testimonials">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <div class="testimonial-container">
+                    <div class="testimonial-card">
+                        <div class="testimonial-img">
+                            <img src="img/pawprint.svg" alt="Cliente">
+                        </div>
+                        <p class="testimonial-text">"Mi perro adora el juguete churrasquito. La calidad es excelente y el envío fue muy rápido."</p>
+                        <p class="testimonial-name">- María L.</p>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-img">
+                            <img src="img/pawprint.svg" alt="Cliente">
+                        </div>
+                        <p class="testimonial-text">"Los comederos son de muy buena calidad. Mi gato está encantado. Volveré a comprar."</p>
+                        <p class="testimonial-name">- Carlos P.</p>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-img">
+                            <img src="img/pawprint.svg" alt="Cliente">
+                        </div>
+                        <p class="testimonial-text">"Excelente atención al cliente. Resolvieron todas mis dudas rápidamente."</p>
+                        <p class="testimonial-name">- Ana G.</p>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
+        
         <div class="pre-footer">
             <div class="pre-1">
                 <img src="img/mail-icon.png" alt="Icono Mail">
                 <h3>Suscríbete para más novedades</h3>
             </div>
             <div class="pre-2">
-                <input type="text" name="mail-list" id="search-input" placeholder="Ingresá tu correo electrónico">
+                <input type="email" name="mail-list" id="search-input" placeholder="Ingresá tu correo electrónico" aria-label="Correo electrónico para suscripción">
                 <button type="submit">Suscribirme</button>
             </div>
         </div>
     </main>
     <footer>
-        <div class="icons">
-            <div class="icons-contacto">
-                <i class="fa-solid fa-location-dot"></i>
-                <i class="fa-solid fa-phone"></i>
-                <i class="fa-regular fa-envelope"></i>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="#">Perros</a></li>
+                    <li><a href="#">Gatos</a></li>
+                    <li><a href="#">Juguetes</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                </ul>
             </div>
-            <div class="contacto">
-                <h2>Localidad</h2>
-                <p>Calle, Departamento</p>
-                <h2>Teléfono</h2>
-                <p>Número de teléfono</p>
-                <h2>Correo Electrónico</h2>
-                <p>Dirección de correo</p>
+            <div class="footer-column">
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Envíos y devoluciones</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <div class="icons">
+                    <div class="icons-contacto">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <div class="contacto">
+                        <h2>Localidad</h2>
+                        <p>Calle Principal 123, Montevideo</p>
+                        <h2>Teléfono</h2>
+                        <p>(+598) 2345-6789</p>
+                        <h2>Correo Electrónico</h2>
+                        <p>info@catanddog.com</p>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="logo-footer">
-            <a href="index.html"><img src="img/logo-inverso.png" alt="Logo" class="logo-footer"></a>
+            <a href="index.html"><img src="img/logo-inverso.png" alt="Logo Cat&Dog" class="logo-footer"></a>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
     </footer>
     <div class="footer-end">
-        <span>&copy;Todos los derechos reservados Front End</span>
+        <span>&copy; 2023 Todos los derechos reservados | Front Cat&Dog</span>
     </div>
+    
+    <!-- Script -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
